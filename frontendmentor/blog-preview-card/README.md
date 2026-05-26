@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/shpirgonde)
+- Solution URL: https://github.com/shpirgonde
 
 ### Built with
 
@@ -35,9 +35,8 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- [Styled Components](https://styled-components.com/) - For styles
 
 ## Author
 
-- GitHub - [@yourusername](https://github.com/shpirgonde)
+- GitHub - [shpirgonde](https://github.com/shpirgonde)
 
