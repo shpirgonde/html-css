@@ -116,14 +116,12 @@ body {
 
 }
 
-
 .accordion__panel {
     background-color: var(--white);
     max-height: 0;
     overflow: hidden;
     transition: max-height 650ms cubic-bezier(0.25, 1, 0.5, 1);
 }
-
 
 .accordion__content {
     color: var(--grayish-purple);
