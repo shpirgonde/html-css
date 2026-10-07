@@ -1,0 +1,49 @@
+.step-1-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-start;
+    /* Changed from center to push elements to the top */
+    gap: 1rem;
+    /* This controls the gap between input fields */
+
+    & .input-group {
+        display: flex;
+        flex-direction: column;
+        gap: .6rem;
+    }
+
+    & .form-control {
+        width: 90%;
+        padding: 1rem;
+        border: 1px solid var(--grey-500);
+        border-radius: 7px;
+        font-weight: 500;
+        font-size: 1rem;
+        /* font-family: inherit; */
+
+        &:focus {
+            outline-color: var(--purple-600);
+        }
+
+        &::placeholder {
+            font-weight: 500;
+            font-size: 1rem;
+        }
+    }
+
+    & .error {
+        display: none;
+        color: var(--red-500);
+        font-size: .9rem;
+        font-weight: 700;
+    }
+
+    & .label {
+        color: var(--blue-950);
+        display: flex;
+        justify-content: space-between;
+    }
+
+}

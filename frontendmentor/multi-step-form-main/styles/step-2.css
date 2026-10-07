@@ -1,0 +1,107 @@
+.plan-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    margin-top: 24px;
+}
+
+.plan-card {
+    border: 2px solid var(--grey-500);
+    border-radius: 7px;
+    width: 150px;
+    height: 170px;
+    cursor: pointer;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    /* RESET THE INHERITED OVERSIZE TEXT LINE HEIGHTS HERE */
+    line-height: normal;
+}
+
+.plan-info {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+
+    & b {
+        color: var(--blue-950);
+    }
+
+    & span {
+        color: var(--grey-500);
+    }
+}
+
+.monthly,
+.yearly {
+    color: var(--grey-500);
+    font-weight: 500;
+}
+
+.sw-active {
+    color: var(--blue-950);
+}
+
+.switcher {
+    background-color: var(--blue-50);
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem;
+    margin-bottom: 5rem;
+    justify-content: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--blue-950);
+    transition: 0.4s;
+
+    &:before {
+        position: absolute;
+        content: "";
+        height: 16px;
+        width: 16px;
+
+        left: 4px;
+        bottom: 4px;
+        background-color: var(--white);
+        transition: 0.4s;
+
+    }
+}
+
+input:checked+.slider::before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round::before {
+    border-radius: 50%;
+}

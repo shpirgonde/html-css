@@ -1,0 +1,42 @@
+
+/* Button Style sheets */
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.previous-step {
+    /* margin-top: auto; */
+    border: none;
+    background-color: transparent;
+    font-weight: 700;
+    /* padding: 1rem 2rem;
+    border-radius: 7px; */
+    color: var(--grey-500);
+    cursor: pointer;
+
+    &:hover {
+        color: var(--blue-800);
+    }
+
+}
+
+
+.next-step {
+    margin-top: auto;
+    /* margin-bottom: 2rem; */
+    margin-left: auto;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 7px;
+    background-color: var(--blue-950);
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--blue-800);
+    }
+}

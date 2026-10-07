@@ -1,0 +1,12 @@
+// This is a preview of how simple the JS template will look later:
+listContainer.innerHTML += `
+  <div class="selected-addon-row">
+    <span class="service-name">${addonName}</span>
+    <span class="service-price">${addonPrice}</span>
+  </div>
+`;
+
+/* Optional: Hides the horizontal divider line if the user selected 0 addons */
+.selection-container:not(:has(.selected-addon-row)) hr {
+  display: none;
+}

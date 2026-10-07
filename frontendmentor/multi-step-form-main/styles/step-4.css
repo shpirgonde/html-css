@@ -1,0 +1,95 @@
+.form-step-4 {
+    margin-top: 2rem;
+
+    & .selection-box {
+        --box-gap: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+
+        background-color: var(--blue-100);
+        padding: 1.5rem;
+        border-radius: 7px;
+        gap: var(--box-gap);
+
+        & hr {
+            border: none;
+            border-top: 1px solid #d6d9e6;
+            margin: 0;
+            /* Remove default browser margins so it relies purely on flex gap */
+        }
+
+        & .change-plan a {
+            color: var(--grey-500);
+
+            &:hover {
+                color: var(--purple-600);
+            }
+        }
+    }
+
+    /* 
+    & .selection-container {
+        background-color: var(--blue-100);
+        padding: 1.5rem;
+        border-radius: 7px;
+
+    } */
+
+    & .selected-plan {
+        display: flex;
+        justify-content: space-between;
+        /* padding: 1rem 0; */
+        /* margin-bottom: 1rem; */
+        color: var(--blue-950);
+        font-weight: 700;
+    }
+
+    & .selected-addons-list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--box-gap);
+        /* gap: .5rem; */
+
+
+        & .service-name {
+            color: var(--grey-500);
+        }
+
+        & .service-price {
+            color: var(--blue-950);
+        }
+
+    }
+
+    & .selected-addon-row {
+        display: flex;
+        justify-content: space-between;
+        /* padding: 1rem 0; */
+
+    }
+
+    & .total-box {
+        margin-top: 1rem;
+        padding: 1.2rem;
+        display: flex;
+        flex-direction: row;
+        align-items: space-between;
+        justify-content: space-between;
+        /* Pushes item 1 to start, item 2 to end */
+        align-items: center;
+        /* Optional: Aligns them perfectly on a straight horizontal line */
+
+        & .total-label {
+            color: var(--grey-500);
+        }
+
+        & .total-amount {
+            color: var(--purple-600);
+            font-weight: 700;
+        }
+    }
+
+}
